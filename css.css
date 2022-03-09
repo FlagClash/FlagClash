@@ -44,6 +44,7 @@ filter:drop-shadow(10px 15px 0px #00000040);
 
 }
 .Card {
+    cursor:pointer;
 animation: fadeIn 1s ease-out;
 opacity: 1;
     border-radius: 15px;
