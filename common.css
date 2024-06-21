@@ -1,0 +1,317 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.top-bar {
+	background-color: #242431;
+	color: white;
+	padding: 5px;
+	text-align: left;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.top-bar button {
+	background-color: #00000022;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin: 5px;
+	cursor: pointer;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	/* Add a 1px white border */
+
+	border-radius: 10px;
+}
+
+.left-bar button {
+	background-color: #00000022;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+	color: #FFF
+}
+
+.left-bar button:hover {
+	background-color: #00AAFF22;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.top-bar img {
+	height: 40px;
+	top: 10px;
+	position: relative;
+}
+
+.seasonDivider {
+	color: #ffffff56;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.older {
+	color: #ffffffaa;
+}
+
+.top-bar img:hover {
+	cursor: pointer;
+}
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #00000052;
+}
+
+.vl {
+	border-left: 6px solid rgba(255, 255, 255, 0.2);
+	height: 10px;
+	width: 1px;
+}
+
+
+.top-bar button:hover {
+	background-color: #00AAFF22;
+}
+
+.container {
+	display: flex;
+	margin-top: 60px;
+	/* Height of the top bar */
+}
+
+.left-bar {
+	background-color: #1A1A26;
+	padding: 15px;
+	width: 150px;
+	margin-left: 20px;
+	/* height: 100vh; */
+	position: fixed;
+	top: 85px;
+	/* Height of the top bar */
+	left: 401;
+	overflow-y: auto;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	/* Add a 1px white border */
+	border-radius: 10px;
+	transition: 0.3s;
+
+}
+
+
+.left-bar.folded {
+	width: 20px;
+	height: 20px;
+	padding: 10px;
+	padding-right: 15px;
+	transition: 0.3s;
+	overflow: hidden;
+
+}
+
+.left-bar ul {
+	transition: 0.3s;
+}
+
+.left-bar.folded ul {
+	position: relative;
+	scale: 0;
+	height: 0;
+}
+
+.left-bar.folded~.content {
+	margin-left: 70px;
+	/* Width of the left bar + some padding */
+	/* margin-left: 2; */
+}
+
+.left-bar ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.left-bar li {
+	margin: 10px 0;
+}
+
+.left-bar a {
+	text-decoration: none;
+	color: #f7f7f7;
+}
+
+.left-bar a:hover {
+	color: #00e1ff;
+}
+
+.link {
+	text-decoration: underline;
+	color: #f7f7f7;
+}
+
+.link:hover {
+	color: #00e1ff;
+}
+
+.content {
+	margin-left: 220px;
+	/* Width of the left bar + some padding */
+	padding: 15px;
+	margin-bottom: 10vh;
+	/* height: calc(100vh - 20px); */
+	flex-grow: 1;
+	transition: 0.35s;
+}
+
+.toggle-button:hover {
+	cursor: pointer;
+	color: #00e1ff;
+}
+
+body {
+	background-color: #13131D;
+}
+
+article {
+	position: relative;
+	background-color: #1A1A26;
+	margin: 10px;
+	padding: 22px;
+	color: white;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	/* Add a 1px white border */
+	border-radius: 10px;
+	/* Add rounded corners */
+}
+
+h1 {
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.table-container {
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255,
+			255,
+			0.2);
+	/* Rounded corners for the table container */
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/* Clip the corners of the table */
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+.thin-column {
+	width: 1%;
+	white-space: nowrap;
+}
+
+
+table td,
+table th {
+	padding: 8px;
+	text-align: center;
+	border: 1px solid rgba(255, 255,
+			255,
+			0.15);
+}
+
+tr.highlighted {
+	background-color: #ffffff28;
+	font-weight: bolder;
+}
+
+h1,
+p {
+	margin-bottom: 10px;
+}
+
+.image-box {
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255,
+			255,
+			0.2);
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 20px;
+	margin: 20px;
+	background-color: #242431;
+
+}
+
+.image-box img {
+	max-width: 100px;
+	/* Adjust maximum width of the image */
+	height: auto;
+	/* Maintain aspect ratio */
+	margin-bottom: 5px;
+}
+
+.image-box p {
+	color: #ccc;
+	/* Example text color */
+	font-size: 14px;
+	/* Example font size */
+	text-align: right;
+	/* Align description text to the right */
+}
+
+.openable {
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255,
+			255,
+			0.2);
+	border-radius: 10px;
+	background-color: #242431;
+	padding: 20px;
+}
+
+
+.scroll-container {
+	display: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* display: none; */
+
+	/* width: inherit; */
+	/* display: block; */
+	/* overflow: scroll; */
+	/* max-width: 100cap; */
+
+	padding: 10px;
+	gap: 40px;
+	/* Adds spacing between images */
+}
+
+.scroll-container img {
+	width: 300px;
+	transition: 0.3s;
+	margin: 35px;
+}
+
+.scroll-container img:hover {
+	margin: 0px;
+	width: 370px;
+}
