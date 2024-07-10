@@ -1,0 +1,16 @@
+{
+	"players": {
+		"flowwave": {
+			"level": 10,
+			"gold": 5
+		},
+		"kup": {
+			"level": 14,
+			"gold": 52
+		},
+		"waluigi": {
+			"level": 14,
+			"gold": 52
+		}
+	}
+}
