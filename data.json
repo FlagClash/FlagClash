@@ -2,15 +2,18 @@
 	"players": {
 		"flowwave": {
 			"level": 10,
-			"gold": 5
+			"gold": 5,
+			"uuid": "563edf73-f750-41cd-943c-1c77b66f283f"
 		},
 		"kup": {
-			"level": 14,
-			"gold": 52
+			"level": 17,
+			"gold": 52,
+			"uuid": "3aa50874-f79a-47f7-af39-16117458723a"
 		},
 		"waluigi": {
 			"level": 14,
-			"gold": 52
+			"gold": 52,
+			"uuid": "3aa50874-f79a-47f7-af39-16117458723a"
 		}
 	}
 }
