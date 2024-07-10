@@ -1,9 +1,25 @@
 {
+	"max": {
+		"pouchUpgrades": 19
+	},
 	"players": {
 		"flowwave": {
 			"level": 10,
 			"gold": 5,
-			"uuid": "563edf73-f750-41cd-943c-1c77b66f283f"
+			"uuid": "563edf73-f750-41cd-943c-1c77b66f283f",
+			"rank": "Patron",
+			"uniqueKills": 123,
+			"playtime": 4314,
+			"pouchUpgrades": 3,
+			"charms": [
+				"Antivax",
+				"Bandage",
+				"Deep Focus"
+			],
+			"weapons": [
+				"Titan Trident",
+				"Shreading Sword"
+			]
 		},
 		"kup": {
 			"level": 17,
