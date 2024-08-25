@@ -1,10 +1,19 @@
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
+
+	font-weight: 600;
+	/* background-color: ; */
+	background: #13131D url("images/background.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .top-bar {
-	background-color: #242431;
+	background-color: #2424314d;
+	backdrop-filter: blur(10px);
 	color: white;
 	padding: 5px;
 	text-align: left;
@@ -15,6 +24,7 @@ body {
 	z-index: 1000;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 
 .top-bar button {
 	background-color: #00000022;
@@ -65,6 +75,27 @@ body {
 	cursor: pointer;
 }
 
+.align-last-word {
+	text-align: justify;
+	/* Justify the text */
+	width: 100%;
+}
+
+.align-last-word .end {
+	float: right;
+	/* Float the last word to the right */
+	display: inline-block;
+	/* Make sure it aligns on the same line */
+	margin-left: 10px;
+	/* Add some space between the text and the last word */
+}
+
+wip {
+	color: yellow;
+	font-size: larger;
+	font-weight: 1000;
+}
+
 hr {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -89,7 +120,8 @@ hr {
 }
 
 .left-bar {
-	background-color: #1A1A26;
+	background-color: #2424316d;
+	backdrop-filter: blur(10px);
 	padding: 15px;
 	width: 150px;
 	margin-left: 20px;
@@ -103,9 +135,50 @@ hr {
 	/* Add a 1px white border */
 	border-radius: 10px;
 	transition: 0.3s;
-
 }
 
+.profileheader {
+	background-color: #ffffff2d;
+	padding: 10px;
+	border-radius: 50px;
+	font-size: larger;
+	padding-left: 20px;
+	align-items: center;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	padding: 8px;
+
+	background: #40be8a;
+	/* border: 2px solid #666; */
+	color: #ffffff;
+	text-align: center;
+	/* font: 32px; */
+	/* font-family: Arial, sans-serif; */
+	font: 32px Arial, sans-serif;
+	font-weight: 600;
+}
+
+#search-box {
+	background-color: #1a1a2638;
+	padding: 8px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	/* height: 100vh; */
+	top: 85px;
+	/* Height of the top bar */
+	left: 401;
+	overflow-y: auto;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	/* Add a 1px white border */
+	border-radius: 10px;
+	transition: 0.3s;
+	color: #FFF;
+	font-size: larger;
+}
 
 .left-bar.folded {
 	width: 20px;
@@ -175,13 +248,11 @@ hr {
 	color: #00e1ff;
 }
 
-body {
-	background-color: #13131D;
-}
 
 article {
 	position: relative;
-	background-color: #1A1A26;
+	background-color: #1a1a2674;
+	backdrop-filter: blur(10px);
 	margin: 10px;
 	padding: 22px;
 	color: white;
@@ -257,8 +328,8 @@ p {
 	align-items: flex-end;
 	padding: 20px;
 	margin: 20px;
-	background-color: #242431;
-
+	background-color: #69697c5c;
+	backdrop-filter: blur(10px);
 }
 
 .image-box img {
@@ -284,7 +355,7 @@ p {
 			255,
 			0.2);
 	border-radius: 10px;
-	background-color: #242431;
+	background-color: #2d2d3847;
 	padding: 20px;
 }
 
@@ -314,4 +385,40 @@ p {
 .scroll-container img:hover {
 	margin: 0px;
 	width: 370px;
+}
+
+
+.scrollable-box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	/* Responsive grid */
+	grid-gap: 10px;
+	/* Space between boxes */
+	width: 90%;
+	height: 90%;
+	/* max-width: 1200px; */
+	/* Max width for larger screens */
+	margin: auto;
+}
+
+.scrollable-box {
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255,
+			255,
+			0.2);
+	border-radius: 10px;
+	background-color: #1c1c2347;
+
+	max-height: 422px;
+	padding: 10px;
+	overflow-y: auto;
+	/* Make content scrollable */
+	display: flex;
+	flex-direction: column;
+	/* To ensure content flows vertically */
+}
+
+.scrollable-box p {
+	margin: 0;
+	line-height: 1.5;
 }
